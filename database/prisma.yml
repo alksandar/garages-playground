@@ -1,0 +1,8 @@
+datamodel: datamode.graphql
+
+seed:
+	import: seed.graphql
+
+hooks:
+	post-deploy:
+		- graphql get-schema --project database
